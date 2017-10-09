@@ -21,9 +21,6 @@ SystemJS.config({
         }
       }
     }
-  },
-  meta: {
-    'react': { esModule: true }
   }
 });
 
