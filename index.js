@@ -1,5 +1,10 @@
 import React, { Component } from "react"
 import ReactDOM from 'react-dom';
+//import React from "react"
+//const { Component } = React
+
+console.log("React", React)
+console.log("Component", Component)
 
 class HelloWorld extends Component {
   render() {
