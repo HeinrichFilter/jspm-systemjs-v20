@@ -43,24 +43,16 @@ SystemJS.config({
     "os": "npm:jspm-nodelibs-os@0.2.2",
     "path": "npm:jspm-nodelibs-path@0.2.3",
     "process": "npm:jspm-nodelibs-process@0.2.1",
-    "react": "npm:react@16.0.0",
-    "react-dom": "npm:react-dom@16.0.0",
+    "react": "npm:react@16.2.0",
+    "react-dom": "npm:react-dom@16.2.0",
     "stream": "npm:jspm-nodelibs-stream@0.2.1",
-    "string_decoder": "npm:jspm-nodelibs-string_decoder@0.2.1",
+    "string_decoder": "npm:jspm-nodelibs-string_decoder@0.2.2",
     "url": "npm:jspm-nodelibs-url@0.2.1",
     "util": "npm:jspm-nodelibs-util@0.2.2",
     "vm": "npm:jspm-nodelibs-vm@0.2.1",
     "zlib": "npm:jspm-nodelibs-zlib@0.2.3"
   },
   packages: {
-    "npm:react@16.0.0": {
-      "map": {
-        "loose-envify": "npm:loose-envify@1.3.1",
-        "fbjs": "npm:fbjs@0.8.16",
-        "object-assign": "npm:object-assign@4.1.1",
-        "prop-types": "npm:prop-types@15.6.0"
-      }
-    },
     "npm:fbjs@0.8.16": {
       "map": {
         "loose-envify": "npm:loose-envify@1.3.1",
@@ -69,7 +61,7 @@ SystemJS.config({
         "isomorphic-fetch": "npm:isomorphic-fetch@2.2.1",
         "promise": "npm:promise@7.3.1",
         "setimmediate": "npm:setimmediate@1.0.5",
-        "ua-parser-js": "npm:ua-parser-js@0.7.14"
+        "ua-parser-js": "npm:ua-parser-js@0.7.17"
       }
     },
     "npm:prop-types@15.6.0": {
@@ -181,26 +173,7 @@ SystemJS.config({
     },
     "npm:jspm-nodelibs-crypto@0.2.1": {
       "map": {
-        "crypto-browserify": "npm:crypto-browserify@3.11.1"
-      }
-    },
-    "npm:crypto-browserify@3.11.1": {
-      "map": {
-        "inherits": "npm:inherits@2.0.3",
-        "browserify-cipher": "npm:browserify-cipher@1.0.0",
-        "browserify-sign": "npm:browserify-sign@4.0.4",
-        "create-ecdh": "npm:create-ecdh@4.0.0",
-        "create-hash": "npm:create-hash@1.1.3",
-        "pbkdf2": "npm:pbkdf2@3.0.14",
-        "public-encrypt": "npm:public-encrypt@4.0.0",
-        "create-hmac": "npm:create-hmac@1.1.6",
-        "diffie-hellman": "npm:diffie-hellman@5.0.2",
-        "randombytes": "npm:randombytes@2.0.5"
-      }
-    },
-    "npm:jspm-nodelibs-string_decoder@0.2.1": {
-      "map": {
-        "string_decoder": "npm:string_decoder@0.10.31"
+        "crypto-browserify": "npm:crypto-browserify@3.12.0"
       }
     },
     "npm:url@0.11.0": {
@@ -264,7 +237,7 @@ SystemJS.config({
     "npm:browserify-cipher@1.0.0": {
       "map": {
         "browserify-des": "npm:browserify-des@1.0.0",
-        "browserify-aes": "npm:browserify-aes@1.0.8",
+        "browserify-aes": "npm:browserify-aes@1.1.1",
         "evp_bytestokey": "npm:evp_bytestokey@1.0.3"
       }
     },
@@ -273,16 +246,6 @@ SystemJS.config({
         "inherits": "npm:inherits@2.0.3",
         "cipher-base": "npm:cipher-base@1.0.4",
         "des.js": "npm:des.js@1.0.0"
-      }
-    },
-    "npm:browserify-aes@1.0.8": {
-      "map": {
-        "cipher-base": "npm:cipher-base@1.0.4",
-        "create-hash": "npm:create-hash@1.1.3",
-        "inherits": "npm:inherits@2.0.3",
-        "safe-buffer": "npm:safe-buffer@5.1.1",
-        "evp_bytestokey": "npm:evp_bytestokey@1.0.3",
-        "buffer-xor": "npm:buffer-xor@1.0.3"
       }
     },
     "npm:evp_bytestokey@1.0.3": {
@@ -312,11 +275,11 @@ SystemJS.config({
     },
     "npm:parse-asn1@5.1.0": {
       "map": {
-        "browserify-aes": "npm:browserify-aes@1.0.8",
+        "browserify-aes": "npm:browserify-aes@1.1.1",
         "create-hash": "npm:create-hash@1.1.3",
         "evp_bytestokey": "npm:evp_bytestokey@1.0.3",
         "pbkdf2": "npm:pbkdf2@3.0.14",
-        "asn1.js": "npm:asn1.js@4.9.1"
+        "asn1.js": "npm:asn1.js@4.9.2"
       }
     },
     "npm:sha.js@2.4.9": {
@@ -352,13 +315,6 @@ SystemJS.config({
       "map": {
         "inherits": "npm:inherits@2.0.3",
         "hash-base": "npm:hash-base@3.0.4"
-      }
-    },
-    "npm:asn1.js@4.9.1": {
-      "map": {
-        "bn.js": "npm:bn.js@4.11.8",
-        "inherits": "npm:inherits@2.0.3",
-        "minimalistic-assert": "npm:minimalistic-assert@1.0.0"
       }
     },
     "npm:hash-base@2.0.2": {
@@ -402,12 +358,63 @@ SystemJS.config({
         "minimalistic-assert": "npm:minimalistic-assert@1.0.0"
       }
     },
-    "npm:react-dom@16.0.0": {
+    "npm:crypto-browserify@3.12.0": {
       "map": {
-        "loose-envify": "npm:loose-envify@1.3.1",
-        "object-assign": "npm:object-assign@4.1.1",
+        "inherits": "npm:inherits@2.0.3",
+        "randomfill": "npm:randomfill@1.0.3",
+        "public-encrypt": "npm:public-encrypt@4.0.0",
+        "browserify-cipher": "npm:browserify-cipher@1.0.0",
+        "create-hash": "npm:create-hash@1.1.3",
+        "pbkdf2": "npm:pbkdf2@3.0.14",
+        "randombytes": "npm:randombytes@2.0.5",
+        "diffie-hellman": "npm:diffie-hellman@5.0.2",
+        "browserify-sign": "npm:browserify-sign@4.0.4",
+        "create-ecdh": "npm:create-ecdh@4.0.0",
+        "create-hmac": "npm:create-hmac@1.1.6"
+      }
+    },
+    "npm:randomfill@1.0.3": {
+      "map": {
+        "randombytes": "npm:randombytes@2.0.5",
+        "safe-buffer": "npm:safe-buffer@5.1.1"
+      }
+    },
+    "npm:browserify-aes@1.1.1": {
+      "map": {
+        "safe-buffer": "npm:safe-buffer@5.1.1",
+        "cipher-base": "npm:cipher-base@1.0.4",
+        "create-hash": "npm:create-hash@1.1.3",
+        "evp_bytestokey": "npm:evp_bytestokey@1.0.3",
+        "inherits": "npm:inherits@2.0.3",
+        "buffer-xor": "npm:buffer-xor@1.0.3"
+      }
+    },
+    "npm:asn1.js@4.9.2": {
+      "map": {
+        "bn.js": "npm:bn.js@4.11.8",
+        "inherits": "npm:inherits@2.0.3",
+        "minimalistic-assert": "npm:minimalistic-assert@1.0.0"
+      }
+    },
+    "npm:react-dom@16.2.0": {
+      "map": {
+        "prop-types": "npm:prop-types@15.6.0",
         "fbjs": "npm:fbjs@0.8.16",
-        "prop-types": "npm:prop-types@15.6.0"
+        "loose-envify": "npm:loose-envify@1.3.1",
+        "object-assign": "npm:object-assign@4.1.1"
+      }
+    },
+    "npm:jspm-nodelibs-string_decoder@0.2.2": {
+      "map": {
+        "string_decoder": "npm:string_decoder@0.10.31"
+      }
+    },
+    "npm:react@16.2.0": {
+      "map": {
+        "fbjs": "npm:fbjs@0.8.16",
+        "object-assign": "npm:object-assign@4.1.1",
+        "prop-types": "npm:prop-types@15.6.0",
+        "loose-envify": "npm:loose-envify@1.3.1"
       }
     }
   }

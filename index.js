@@ -1,12 +1,10 @@
-import React, { Component } from "react"
+import React from "react";
 import ReactDOM from 'react-dom';
-//import React from "react"
-//const { Component } = React
 
-console.log("React", React)
-console.log("Component", Component)
+console.log("React", React);
+console.log("Component", React.Component);
 
-class HelloWorld extends Component {
+class HelloWorld extends React.Component {
   render() {
     return React.createElement('h1', null, 'Hello World');
   }
